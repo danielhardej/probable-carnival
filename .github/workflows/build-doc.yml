@@ -20,4 +20,4 @@ jobs:
 
       - name: Upload Compiled Document
         if: success()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
