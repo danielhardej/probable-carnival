@@ -33,8 +33,14 @@ jobs:
       - name: Check memory
         run: df -h
 
-      - name: Run TOP
-        run: top
+      - name: Run FREE
+        run: free -m
+
+      - name: Run VMSTAT
+        run: vmstat
+
+      - name: Run LESS
+        run: less /proc/meminfo
 
   test-mac:
     runs-on: macos-latest
@@ -47,5 +53,11 @@ jobs:
       - name: Check memory
         run: df -h
 
-      - name: Run TOP
-        run: top
+      - name: Run FREE
+        run: free -m
+
+      - name: Run VMSTAT
+        run: vmstat
+
+      - name: Run LESS
+        run: less /proc/meminfo
